@@ -4,7 +4,7 @@ from subpages import TutorDemo, ExamCheckerDemo
 APP_TITLE = 'Rijksvastgoedbedrijf Chat'
 st.set_page_config(APP_TITLE, page_icon="📈", layout="wide")
 
-st.sidebar.image("/Users/kyra/Desktop/Academic-software-deployments-demo/assets/rijksvastgoedbedrijf.jpg", width=300)
+st.sidebar.image("assets/rijksvastgoedbedrijf.jpg", width=300)
 
 # Initialize session state variables
 if "file_uploaded" not in st.session_state: # Initialize the indicator of whether the file was uploaded
