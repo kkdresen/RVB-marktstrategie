@@ -32,7 +32,7 @@ def variable_textfields(variables):
             "variable",
             label_visibility="collapsed",
             disabled=False,
-            placeholder=f"{variable.replace("_"," ").capitalize()}",
+            placeholder=f"{variable.replace('_',' ').capitalize()}",
             key=f"variable_key_{index}" # setting unique key due to streamlit rules
         )
 

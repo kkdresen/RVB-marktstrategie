@@ -1,10 +1,10 @@
 import streamlit as st
 from subpages import TutorDemo, ExamCheckerDemo
 
-APP_TITLE = 'ACSW Chat'
+APP_TITLE = 'Rijksvastgoedbedrijf Chat'
 st.set_page_config(APP_TITLE, page_icon="📈", layout="wide")
 
-st.sidebar.image("assets/acsw.png", width=300)
+st.sidebar.image("/Users/kyra/Desktop/Academic-software-deployments-demo/assets/rijksvastgoedbedrijf.jpg", width=300)
 
 # Initialize session state variables
 if "file_uploaded" not in st.session_state: # Initialize the indicator of whether the file was uploaded
@@ -68,22 +68,14 @@ st.title(APP_TITLE)
 style()
 
 with st.sidebar:
-    useCase = st.selectbox("Chose the deployment", options=["Law Tutor Chat", "Examination Checker"], index=None)
+    useCase = st.selectbox("Chose the deployment", options=["Markt Strategie Chat"], index=None)
 
-    if useCase == "Law Tutor Chat":
-        page = "Law Tutor Chat"
-        navigate_to(page)
-
-    if useCase == "Examination Checker":
-        page = "Examination Checker"
+    if useCase == "Markt Strategie Chat":
+        page = "Markt Strategie Chat"
         navigate_to(page)
 
 
 # Dynamically render content
-if st.session_state.current_page == "Law Tutor Chat":
-    st.session_state.key = "law-tutor"
+if st.session_state.current_page == "Markt Strategie Chat":
+    st.session_state.key = "rijkvastgoed-marktstrategie"
     TutorDemo.show()
-
-elif st.session_state.current_page == "Examination Checker":
-    st.session_state.key = "automatic_examination_check"
-    ExamCheckerDemo.show()
