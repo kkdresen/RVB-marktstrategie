@@ -1,0 +1,14 @@
+[theme]
+primaryColor = "#23059d"
+backgroundColor = "#f1f2ff"
+secondaryBackgroundColor = "#FFFFFF" 
+textColor = "#31333F"
+font = "sans serif"
+base = "light"
+
+[server]
+maxUploadSize = 10
+headless = true
+
+[client]
+hideSidebarNav = true
