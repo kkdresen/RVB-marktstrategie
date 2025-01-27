@@ -68,7 +68,7 @@ st.title(APP_TITLE)
 style()
 
 with st.sidebar:
-    useCase = st.selectbox("Chose the deployment", options=["Markt Strategie Chat"], index=None)
+    useCase = st.selectbox("Choose the deployment", options=["Markt Strategie Chat"], index=None)
 
     if useCase == "Markt Strategie Chat":
         page = "Markt Strategie Chat"
